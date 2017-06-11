@@ -12,8 +12,8 @@ To run simply run as executible in terminal.
 
 ```
 GetWeather $ ./getweather.py
-
+```
 or 
-
+```
 GetWeather $ python getweather.py
 ```
