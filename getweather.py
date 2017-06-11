@@ -26,11 +26,19 @@ def getWeather(url,zipcode,api_key):
 #parse api response with json
     parsed_response = json.loads(response.text)
 
-#print data
-    #print parsed_response["main"]
-    return parsed_response["main"]
+#pull information from parsed json response
 
-print getWeather(url,zipcode,api_key)
+    location = parsed_response["name"]
+    description = parsed_response["weather"][0]["description"]
+    temp = parsed_response["main"]["temp"]
+    temp_max = parsed_response["main"]["temp_max"]
+    temp_min = parsed_response["main"]["temp_min"]
+    humidity = parsed_response["main"]["humidity"]
+    degree = u'\xb0'
+
+    print "In %s it is %s%sF and %s with a low of %s and a high of %s. Humidity is %s%%." % (location, temp, degree, description, temp_min, temp_max, humidity)
+
+getWeather(url,zipcode,api_key)
 
 
 
