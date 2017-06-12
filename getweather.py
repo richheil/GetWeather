@@ -26,7 +26,7 @@ def getWeather(url,zipcode,api_key):
 
 if __name__ == "__main__":
 
-#I would not usually include an api key in a public git repo, but I erred on the side of easy of use in this case
+#I would not usually include an api key in a public git repo, but I erred on the side of ease of use in this case
     api_key='cbc6d2ae9bbbce47aad5c0c96d20a4af'
     url='http://api.openweathermap.org/data/2.5/weather'
 
