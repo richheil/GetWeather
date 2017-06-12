@@ -6,7 +6,7 @@ You may need to install the python module requests.
 
 On Linux or Mac:
 ```
-sudo pip install requests
+pip install requests
 ```
 
 On Windows:
